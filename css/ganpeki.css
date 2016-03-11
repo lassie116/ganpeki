@@ -1,0 +1,144 @@
+body {
+    background-color:#000;
+    color:#fff;
+}
+
+#board {
+    position:relative;
+    width:100%;
+    height:750px;
+    background-color:#003;
+}
+
+.gake {
+   position:absolute;
+   width:64px;
+   height:400px;
+   background-color:transparent;
+   background-repeat:no-repeat;
+}
+
+.image_gake {
+   background-image:url(../image/gake.png);
+}
+
+.image_gake_crash_0 {
+   background-image:url(../image/gakekuzure10.png);
+}
+.image_gake_crash_1 {
+   background-image:url(../image/gakekuzure11.png);
+}
+.image_gake_crash_2 {
+   background-image:url(../image/gakekuzure12.png);
+}
+.image_gake_crash_3 {
+   background-image:url(../image/gakekuzure13.png);
+}
+
+.image_gake_1 {
+   background-image:url(../image/gakekuzure06.png);
+}
+.image_gake_2 {
+   background-image:url(../image/gakekuzure05.png);
+}
+.image_gake_3 {
+   background-image:url(../image/gakekuzure04.png);
+}
+.image_gake_4 {
+   background-image:url(../image/gakekuzure03.png);
+}
+.image_gake_5 {
+   background-image:url(../image/gakekuzure02.png);
+}
+.image_gake_6 {
+   background-image:url(../image/gakekuzure01.png);
+}
+
+
+.image_gake_focus {
+   background-image:url(../image/gakemidori.png);
+}
+
+.arrow {
+   position:absolute;
+   width:64px;
+   height:64px;
+   background-color:transparent;
+   background-repeat:no-repeat;
+}
+
+.image_arrow_n {
+   background-image:url(../image/yajirusi_n.png);
+   z-index:7;
+}
+
+.image_arrow_e {
+   background-image:url(../image/yajirusi_e.png);
+   z-index:10;
+}
+
+.image_arrow_w {
+   background-image:url(../image/yajirusi_w.png);
+   z-index:10;
+}
+
+.image_arrow_s {
+   background-image:url(../image/yajirusi_s.png);
+   z-index:8;
+}
+
+#player {
+   position:absolute;
+   top:-48px;
+   width:64px;
+   height:64px;
+   z-index:100;
+}	
+
+.image_chara {
+   background-image:url(../image/chara.png);	     
+}
+
+.image_charaback {
+   background-image:url(../image/charaback.png);	     
+}
+
+.image_charaleft {
+   background-image:url(../image/charaleft.png);
+}
+
+.image_chararight {
+   background-image:url(../image/chararight.png);
+}
+
+.image_jump01 {
+   background-image:url(../image/jump01.png);
+}
+
+.image_jump02 {
+   background-image:url(../image/jump02.png);
+}
+
+.image_jumpleft01 {
+   background-image:url(../image/jumpleft01.png);
+}
+
+.image_jumpleft02 {
+   background-image:url(../image/jumpleft02.png);
+}
+
+.image_jumpright01 {
+   background-image:url(../image/jumpright01.png);
+}
+
+.image_jumpright02 {
+   background-image:url(../image/jumpright02.png);
+}
+
+.image_jumpback01  {
+   background-image:url(../image/jumpback01.png);
+}
+
+.image_jumpback02  {
+   background-image:url(../image/jumpback02.png);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="./css/ganpeki.css" />
+  </head>
+
+  <body>
+    <h1>岸壁の母 Ver 0.1.6</h1>
+    <h2>崖の崩れるアニメーションつきました</h2>
+    <p>firefoxにも対応してるはず</p>
+    <div>
+      <p id="menu">
+	<button id="play_random">ランダム面スタート</button>
+	<button id="play_first">最初からスタート</button>
+	<button id="retry">今の面をリトライ</button>
+	<button id="next_game">パスして次の面をやっちゃう</button>
+      </p>
+      <p id="stage">&emsp;</p>
+      <p id="status">&emsp;</p>
+      <span id="time">10秒に移動しないとゲームオーバーです</span>
+    </div>
+    <div id="board">
+      <!-- <div id="player"><img src="./image/chara.png"/></div> -->
+      <div id="player" class="base_image" ></div>
+      <div id="an" class="arrow image_arrow_n" ></div>
+      <div id="ae" class="arrow image_arrow_e" ></div>
+      <div id="aw" class="arrow image_arrow_w" ></div>
+      <div id="as" class="arrow image_arrow_s" ></div>
+      <!-- <div id="focus"></div> -->
+      <div class="gake" y="0" x="0"></div>
+      <div class="gake" y="0" x="1"></div>
+      <div class="gake" y="0" x="2"></div>
+      <div class="gake" y="0" x="3"></div>
+      <div class="gake" y="0" x="4"></div>
+      <div class="gake" y="0" x="5"></div>
+      <div class="gake" y="0" x="6"></div>
+      <div class="gake" y="0" x="7"></div>
+      <div class="gake" y="0" x="8"></div>
+      <div class="gake" y="1" x="0"></div>
+      <div class="gake" y="1" x="1"></div>
+      <div class="gake" y="1" x="2"></div>
+      <div class="gake" y="1" x="3"></div>
+      <div class="gake" y="1" x="4"></div>
+      <div class="gake" y="1" x="5"></div>
+      <div class="gake" y="1" x="6"></div>
+      <div class="gake" y="1" x="7"></div>
+      <div class="gake" y="1" x="8"></div>
+      <div class="gake" y="2" x="0"></div>
+      <div class="gake" y="2" x="1"></div>
+      <div class="gake" y="2" x="2"></div>
+      <div class="gake" y="2" x="3"></div>
+      <div class="gake" y="2" x="4"></div>
+      <div class="gake" y="2" x="5"></div>
+      <div class="gake" y="2" x="6"></div>
+      <div class="gake" y="2" x="7"></div>
+      <div class="gake" y="2" x="8"></div>
+      <div class="gake" y="3" x="0"></div>
+      <div class="gake" y="3" x="1"></div>
+      <div class="gake" y="3" x="2"></div>
+      <div class="gake" y="3" x="3"></div>
+      <div class="gake" y="3" x="4"></div>
+      <div class="gake" y="3" x="5"></div>
+      <div class="gake" y="3" x="6"></div>
+      <div class="gake" y="3" x="7"></div>
+      <div class="gake" y="3" x="8"></div>
+      <div class="gake" y="4" x="0"></div>
+      <div class="gake" y="4" x="1"></div>
+      <div class="gake" y="4" x="2"></div>
+      <div class="gake" y="4" x="3"></div>
+      <div class="gake" y="4" x="4"></div>
+      <div class="gake" y="4" x="5"></div>
+      <div class="gake" y="4" x="6"></div>
+      <div class="gake" y="4" x="7"></div>
+      <div class="gake" y="4" x="8"></div>
+      <div class="gake" y="5" x="0"></div>
+      <div class="gake" y="5" x="1"></div>
+      <div class="gake" y="5" x="2"></div>
+      <div class="gake" y="5" x="3"></div>
+      <div class="gake" y="5" x="4"></div>
+      <div class="gake" y="5" x="5"></div>
+      <div class="gake" y="5" x="6"></div>
+      <div class="gake" y="5" x="7"></div>
+      <div class="gake" y="5" x="8"></div>
+      <div class="gake" y="6" x="0"></div>
+      <div class="gake" y="6" x="1"></div>
+      <div class="gake" y="6" x="2"></div>
+      <div class="gake" y="6" x="3"></div>
+      <div class="gake" y="6" x="4"></div>
+      <div class="gake" y="6" x="5"></div>
+      <div class="gake" y="6" x="6"></div>
+      <div class="gake" y="6" x="7"></div>
+      <div class="gake" y="6" x="8"></div>
+      <div class="gake" y="7" x="0"></div>
+      <div class="gake" y="7" x="1"></div>
+      <div class="gake" y="7" x="2"></div>
+      <div class="gake" y="7" x="3"></div>
+      <div class="gake" y="7" x="4"></div>
+      <div class="gake" y="7" x="5"></div>
+      <div class="gake" y="7" x="6"></div>
+      <div class="gake" y="7" x="7"></div>
+      <div class="gake" y="7" x="8"></div>
+      <div class="gake" y="8" x="0"></div>
+      <div class="gake" y="8" x="1"></div>
+      <div class="gake" y="8" x="2"></div>
+      <div class="gake" y="8" x="3"></div>
+      <div class="gake" y="8" x="4"></div>
+      <div class="gake" y="8" x="5"></div>
+      <div class="gake" y="8" x="6"></div>
+      <div class="gake" y="8" x="7"></div>
+      <div class="gake" y="8" x="8"></div>
+    </div>
+
+    <hr/>
+    効果音は<a href="http://www.skipmore.com/sound/">ユウラボ8bitサウンド工房</a>のものを使用しています。
+<script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/map.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/ganpeki.js" charset="utf-8">
+    </script>
+  </body>
+</html>
+
